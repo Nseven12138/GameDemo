@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace The_Kingdom_of_Nine
 {
     /// <summary>
@@ -22,6 +23,8 @@ namespace The_Kingdom_of_Nine
         public StartWindow()
         {
             InitializeComponent();
+            KeyMove km = new KeyMove(0,0);
+            this.KeyDown += km.keypress;
         }
     }
 }

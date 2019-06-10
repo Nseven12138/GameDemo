@@ -47,7 +47,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="0"> </Image>
+        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="0"> </Image>
+        <Image Name="wall1" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="1"></Image>
+        <Image Name="wall2" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="2"></Image>
         <Image Name="man" Source=".\Resources\人物.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="1"></Image>
         <Image Name="littemoster" Source=".\Resources\小怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="2"></Image>
         <Image Name="Middlemoster" Source=".\Resources\中型怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="3"></Image>
