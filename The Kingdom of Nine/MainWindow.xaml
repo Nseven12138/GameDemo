@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:The_Kingdom_of_Nine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="登陆界面" Height="577.4" Width="1038.2">
     <Grid>
-        
+        <Button Content="新建游戏" HorizontalAlignment="Left" Margin="412,129,439,0" VerticalAlignment="Top" Width="178" Height="56" Click="Button_ClickStart"/>
+        <Button Content="载入存档" Margin="412,219,439,0" VerticalAlignment="Top" Height="56" Click="Button_Click"/>
+        <Button Content="退出游戏" Margin="412,315,439,0" VerticalAlignment="Top" Height="56" Click="Button_ClickExit"/>
     </Grid>
 </Window>
