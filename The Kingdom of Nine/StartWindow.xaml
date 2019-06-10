@@ -47,8 +47,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="0">
-        </Image>
+        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="0"> </Image>
+        <Image Name="man" Source=".\Resources\人物.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="1"></Image>
+        <Image Name="littemoster" Source=".\Resources\小怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="2"></Image>
+        <Image Name="Middlemoster" Source=".\Resources\中型怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="3"></Image>
+        <Image Name="Bigmoster" Source=".\Resources\大怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="4"></Image>
+        
         <Label Content="我的信息" Grid.Column="16" HorizontalAlignment="Left" Margin="146.4,10,0,0" VerticalAlignment="Top" FontSize="20" />
         <Label Content="生命值" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="攻击力" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="18"/>
