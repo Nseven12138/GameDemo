@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:The_Kingdom_of_Nine"
         mc:Ignorable="d"
         Title="StartWindow" Height="850" Width="1200">
+    <Window.Resources>
+        <local:Bean x:Key="textBean" HP="100"/>
+    </Window.Resources>
     <Grid Name="grid1" Width="auto" Height="auto" ShowGridLines="False" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50"/>
@@ -47,15 +50,16 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="0"> </Image>
+        <Image Name="wall" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="0" MouseEnter="test"></Image>
         <Image Name="wall1" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="1"></Image>
         <Image Name="wall2" Source=".\Resources\墙壁.png" Margin="0,0,0,0" Grid.Column="1" Grid.Row="2"></Image>
-        <Image Name="man" Source=".\Resources\人物.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="1"></Image>
+        <Image Name="man" Source=".\Resources\人物.png" Margin="0,0,0,0"></Image>
         <Image Name="littemoster" Source=".\Resources\小怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="2"></Image>
         <Image Name="Middlemoster" Source=".\Resources\中型怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="3"></Image>
         <Image Name="Bigmoster" Source=".\Resources\大怪兽.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="4"></Image>
-        
+        <Image Name="HP" Source=".\Resources\血瓶.png" Margin="0,0,0,0" Grid.Column="0" Grid.Row="5"></Image>
         <Label Content="我的信息" Grid.Column="16" HorizontalAlignment="Left" Margin="146.4,10,0,0" VerticalAlignment="Top" FontSize="20" />
+
         <Label Content="生命值" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="攻击力" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="等级" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="18"/>
@@ -64,12 +68,14 @@
         <Label Content="生命值" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="5" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="攻击力" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="6" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="等级" Grid.Column="16" HorizontalAlignment="Left" Margin="6.4,15.4,0,0" Grid.Row="7" VerticalAlignment="Top" FontSize="18"/>
+
         <Rectangle Grid.Column="16" Fill="White" HorizontalAlignment="Left" Height="420" Margin="1.4,3.2,0,0" Grid.Row="8" Grid.RowSpan="9" Stroke="Black" VerticalAlignment="Top" Width="395"/>
-        <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=HP}" VerticalAlignment="Top" Width="120"/>
-        <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Path=DPS}" VerticalAlignment="Top" Width="120"/>
-        <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=LEVEL}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MyHP" Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Myattack" Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Mylevel" Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Path=MHP}" VerticalAlignment="Top" Width="120"/>
         <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="6" TextWrapping="Wrap" Text="{Binding Path=MDPS}" VerticalAlignment="Top" Width="120"/>
         <TextBox Grid.Column="16" HorizontalAlignment="Left" Height="23" Margin="81.4,22.4,0,0" Grid.Row="7" TextWrapping="Wrap" Text="{Binding Path=MLEVEL}" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>

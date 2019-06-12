@@ -24,7 +24,17 @@ namespace The_Kingdom_of_Nine
         {
             InitializeComponent();
             KeyMove km = new KeyMove(0,0);
+            Myattack.Text = "10";
+            MyHP.Text = "100";
+            Mylevel.Text = "1";
+            Grid.SetColumn(man, 1);
+            Grid.SetRow(man, 1);
             this.KeyDown += km.keypress;
+        }
+
+        private void test(object sender, MouseEventArgs e)
+        {
+            Myattack.Text = "200";
         }
     }
 }

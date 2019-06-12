@@ -121,5 +121,8 @@
   <ItemGroup>
     <Resource Include="Resources\大怪兽.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\血瓶.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
